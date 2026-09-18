@@ -13,14 +13,14 @@ section {
 }
 
 header {
-    padding: 24px;
+    padding: 20px;
     background-color: purple;
     color: white;
     text-align: center;
 }
 
 article {
-    flex: 1;
+    flex: 10;
     padding: 16px;
     background-color: aqua;
     color: black;
