@@ -1,27 +1,66 @@
-.box {
-    width: 350px;
-    height: 150px;
-    margin: 10px;
-    padding: 25px;
-    border: 5px solid black;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#0f172a;
+    color: #e2e8f0;
+     line-height: 1.6;
+
+
+    padding: 0;
 }
 
+
+
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+}
 section {
     display: flex;
      gap: 12px;
 }
 
 header {
-    padding: 20px;
-    background-color: purple;
-    color: white;
+    padding: 40px 20px;
+    background-color: #0f172a;
+    color: #ffffff;
     text-align: center;
+    border-bottom: 1px solid #334155;
 }
 
 article {
-    flex: 10;
-    padding: 16px;
-    background-color: aqua;
-    color: black;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: #1e293b;
+    padding: 12px;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+h2 {
+    color: #38bdf8;
+}
+nav a:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}
+header h1 {
+    color: #38bdf8;
+    font-size: 2.5rem;
 }
