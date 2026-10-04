@@ -22,5 +22,13 @@ function renderProjecten(lijst) {
   });
 }
 
-renderProjecten(projecten);
+function sorteerOpJaar() {
+  const gesorteerd = [...projecten];
+  gesorteerd.sort((a, b) => b.jaar - a.jaar);
+  renderProjecten(gesorteerd);
+}
 
+const button = document.querySelector("#sorteer-jaar");
+button.addEventListener("click", sorteerOpJaar);
+
+renderProjecten(projecten);
