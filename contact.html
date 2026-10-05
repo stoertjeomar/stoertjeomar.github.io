@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>projecten - Omar</title>
+    <title>contact - Omar</title>
 </head>
 <body>
     <header>
-        <h1>Omar zijn projecten</h1>
+        <h1>contact</h1>
     </header>
     <nav>
         <ul>
@@ -23,21 +23,23 @@
             <label for="naam">Naam:</label>
             <input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
             <span id="naam-error" role="alert"></span>
-        </form>
-        <button id="sorteer-jaar">Sorteer op jaar</button>
-        <label for="filter-taal">Filter op taal:</label>
-<select id="filter-taal">
-  <option value="alle">Alle talen</option>
-  <option value="html">HTML</option>
-  <option value="java">Java</option>
-  <option value="python">Python</option>
-</select>
-       <section id="projecten-lijst"></section>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
+            <span id="email-error" role="alert"></span>
+
+            <label for="bericht">Bericht:</label>
+            <textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria-invalid="false"></textarea>
+            <span id="bericht-error" role="alert"></span>
+
+            <button type="submit">Verstuur</button>
+            <div id="form-status" aria-live="polite"></div>
+        </form> 
     </main>
 
     <footer>
         <p>&copy; 2026 Omar Moussaten</p>
     </footer>
-    <script src="projecten.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
